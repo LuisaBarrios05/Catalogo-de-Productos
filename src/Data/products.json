@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "title": "Vela Lavanda Relajante",
+        "price": 3500,
+        "image": "https://cdn.shopify.com/s/files/1/0732/7734/1971/files/A02LM___VELA_AROMATICA_6X6_LAVANDA_MENTA_c.jpg?v=1686836834",
+        "description": "Vela aromática de lavanda para momentos de calm.",
+        "category": "Relajantes"
+    },
+    {
+        "id": 2, 
+        "title": "Vela Cítrica Energizante",
+        "price": 4200, 
+        "image": "https://d22fxaf9t8d39k.cloudfront.net/c03a6877a44157b9339d72c611f2b477c234ebcca7cc92c4c373c549417ca2e9112321.png",
+        "description": "Vela con aroma cítrico para despertar tus sentidos.",
+        "category": "Energizantes"
+      }
+]
