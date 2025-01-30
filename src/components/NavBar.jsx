@@ -5,7 +5,7 @@ const Navbar = ({
   categories,
   onSearch,
   onFilterCategory,
-  
+
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
@@ -23,7 +23,7 @@ const Navbar = ({
     <div>
       <nav className="flex justify-between items-center p-4 bg-pink-50">
         <div className="text-2xl font-bold">🕯️Logo</div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 mx-2">
           <div className="relative">
             <input
               type="text"
@@ -46,14 +46,14 @@ const Navbar = ({
       <div className="flex justify-center space-x-4 p-4 bg-pink-100">
         {categories.length > 0 && categories.map(category => (
           <button
-            key={category}
+            key={category.id}
             onClick={() => handleCategoryFilter(category)}
-            className={`px-4 py-2 rounded-full ${selectedCategory === category
-                ? 'bg-pink-500 text-white'
-                : 'bg-pink-200'
+            className={`px-4 py-2 rounded-full ${selectedCategory === category.name
+              ? 'bg-pink-500 text-white'
+              : 'bg-pink-200'
               }`}
           >
-            {category}
+            {category.name}
           </button>
         ))}
         <button
