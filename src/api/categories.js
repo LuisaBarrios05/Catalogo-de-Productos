@@ -9,7 +9,7 @@ export const getCategoryById = async (id) => {
 };
 
 export const createCategory = async (categoryData) => {
-    return axiosInstance.post('/categories', categoryData);
+    return axiosInstance.post('/categories/create', categoryData);
 };
 
 export const updateCategory = async (id, categoryData) => {

@@ -16,7 +16,8 @@ export const getProductById = async (id) => {
 };
 
 export const createProduct = async (productData) => {
-    return axiosInstance.post('/products', productData);
+    return axiosInstance.post('/products', productData,
+        { headers: { "Content-Type": "multipart/form-data" }, });
 };
 
 export const updateProduct = async (id, productData) => {
