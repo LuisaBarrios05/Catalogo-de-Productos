@@ -1,4 +1,4 @@
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaPencilAlt, FaTrash } from "react-icons/fa";
 import handleWhatsApp from './RedirectWhats';
 
 const CardProduct = ({ product, isAdmin, onEdit, onDelete }) => {
@@ -8,12 +8,12 @@ const CardProduct = ({ product, isAdmin, onEdit, onDelete }) => {
     >
       {isAdmin && (
         <div className="absolute top-2 right-2 flex space-x-2">
-          <button onClick={() => onEdit(product)} className="text-gray-600">
-            <FaEdit />
+          <button onClick={() => onEdit(product)} className="w-8 h-8 flex items-center justify-center bg-white rounded-lg shadow-md border border-gray-300 hover:bg-gray-200">
+            <FaPencilAlt color="black" />
           </button>
-          <button onClick={() => onDelete(product.id)} className="text-red-500">
+          {/* <button onClick={() => onDelete(product.id)} className="text-red-500">
             <FaTrash />
-          </button>
+          </button> */}
         </div>
       )}
       <img
